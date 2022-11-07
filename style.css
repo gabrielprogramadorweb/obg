@@ -1,0 +1,10 @@
+body{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.obg img{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
