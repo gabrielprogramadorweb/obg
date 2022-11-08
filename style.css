@@ -1,13 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap");
+*{
+    padding: 0;
+}
 body{
-    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+    background: rgb(247, 247, 247);
         color: rgb(255, 255, 255);
     text-align: center;
     font-family: "Poppins", sans-serif;
 }
+.obg{
+    position: relative;
+    background-color: rgb(253, 253, 253);
+    box-sizing: border-box;
+    margin-top: 30px;
+    justify-content: center;
+   
+    width: 70%;
+    height: 700px;
+    margin: auto;
+    border-radius: 30px;
+}
+.obg::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: -webkit-linear-gradient(#8b5cf6, #ec4899);
+    z-index: -1;
+    margin: -6px;
+    border-radius: 30px;
+}
 .obg img{
     position: absolute;
     left: 50%;
+    transform: translateX(-50%);
+}
+.obg h1{
+    background-color: rgb(234, 209, 209);
+    top: 50%;
+    font-size: 3em;
+    transform: translateY(120%);
+    position: absolute;
+    left: 50%;
+    padding: 40px;
+    border-radius: 30px;
     transform: translateX(-50%);
 }
 .roxo {
@@ -20,3 +56,23 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+@media(max-width:800px){
+    body{
+        overflow: hidden;
+    }
+    .obg{
+        box-sizing: border-box;
+        margin-top: 30px;
+        justify-content: center;
+       
+        width: 80%;
+        height: 700px;
+        margin: auto;
+        border-radius: 30px;
+    }  
+    .obg h1{
+        font-size: 1.5em;
+        width: 70%;
+    } 
+}
